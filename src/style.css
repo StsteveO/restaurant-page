@@ -1,14 +1,34 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap'); */
+    /*in code= font-family: "Aboreto", sans-serif; */
 
-.hello{
-    /* font-family: "Aboreto", sans-serif; */
-    color:blue;
+.header{
+    text-align: center;
+    font-size: xx-large;
+    color: red;
+}
+.main{
+
+}
+.footer{
     text-align: center;
 }
+
 .item-container{
     border: 2px solid black;
     height: 17rem;
     width: 17rem;
     border-radius: 1.5rem;
     margin: 1rem;
+}
+.item-title,
+.item-content{
+    text-align: center;
+}
+.item-title{
+    font-size: x-large;
+    font-weight: bold;
+}
+.item-content{
+    font-size: large;
+    font-weight: 500;
 }

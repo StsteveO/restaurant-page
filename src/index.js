@@ -1,32 +1,54 @@
 import "./style.css";
-import ItemCreation from "./addToDOM"; // varName, element, cssClass, content;
+import ItemCreation, {doc} from "./addToDOM"; // title, content && doc.header;
 // import Icon from "./icon.png";
 // to run= npx webpack;
 
+const headerFooterContent=(()=>{
+(doc.header).textContent="Restaurant Page!";
+(doc.footer).textContent="Thank you for Playing";
+})();
+
+const menuItem = (() => {
+  const pizza = new ItemCreation(
+    "Pizza", 
+    "Lori's favorite food");
+  const cheeseBurger = new ItemCreation(
+    "Cheese Burger",
+    "Steve's favorite food"
+  );
+  const hotDog = new ItemCreation(
+    "Hot Dog",
+    "Food that Steve likes, and Lori tolerates...but Steve really likes it"
+  );
+  const tacos= new ItemCreation(
+    "Taco's",
+    "Both Steve and Lori wished they had these right now"
+  );
+  return { pizza, cheeseBurger, hotDog, tacos };
+})();
+
+const menuPage = (() => {
+  menuItem.pizza.addToDOM();
+  menuItem.cheeseBurger.addToDOM();
+  menuItem.hotDog.addToDOM();
+  menuItem.tacos.addToDOM();
+//   return {};
+})();
 
 
-console.log("Hello World!!!");
+// console.log("Hello World!!!");
+// function intro(){
+//   const element = document.createElement("div");
+//   element.innerHTML = "Hello World!!!";
+//   element.classList.add("hello");
 
-function intro(){
-  const element = document.createElement("div");
-  element.innerHTML = "Hello World!!!";
-  element.classList.add("hello");
+// // Add the image to our existing div.
+// //   const myIcon = new Image();
+// //   myIcon.src = Icon;
 
-  // Add the image to our existing div.
-//   const myIcon = new Image();
-//   myIcon.src = Icon;
+// //   element.appendChild(myIcon);
 
-//   element.appendChild(myIcon);
+//   return element;
+// }
 
-  return element;
-}
-
-document.body.appendChild(intro());
-
-const pizza= new ItemCreation("Pizza", "div", "hello", "Lori's favorite food");
-console.log(pizza);
-pizza.addToDOM();
-const cheeseBurger= new ItemCreation("Cheese Burger", "div", "hello", "Steve's favorite food");
-cheeseBurger.addToDOM();
-const hotDog= new ItemCreation("Hot Dog", "div", "hello", "Food that Steve likes, and Lori tolerates");
-hotDog.addToDOM();
+// document.body.appendChild(intro());
