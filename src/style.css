@@ -1,17 +1,55 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap'); */
 /*in code= font-family: "Aboreto", sans-serif; */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+:root {
+  /* --custom name: value; */
+  /* --light-green-bg: #476529; */
+  /* example, color: var(--navy-clr) */
+  --prim-bg-clr: #22babb;
+  --sec-bg-clr: rgba(0,0,0,.5);
+  --acc-bg-clr: #348888;
+}
+.page-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7.5rem 1fr 3rem;
+}
+/* fonts */
+/* font-family: 'Roboto', sans-serif; */
+
+.header,
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sec-bg-clr);
+  color: whitesmoke;
+  border: 2px solid black;
+}
 .header {
-  text-align: center;
-  font-size: xx-large;
+  font-size: 3rem;
   font-weight: bolder;
-  color: green;
+  overflow: hidden;
 }
 .main {
-  text-align: center;
+  /* text-align: center; */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
 }
 .footer {
-  text-align: center;
+  font-size: 1rem;
 }
 
 .item-container {

@@ -1,4 +1,5 @@
 import doc from "./docStructure"; // doc.header, main, or footer;
+// import Icon from "./icon.png";
 
 class ItemCreation {
   constructor(title, content) {
@@ -10,6 +11,9 @@ class ItemCreation {
     const itemContainer = document.createElement("div");
     itemContainer.classList.add("item-container");
     doc.main.appendChild(itemContainer);
+
+    // pic
+
 
     const itemTitle = document.createElement("div");
     itemTitle.classList.add("item-title");

@@ -5,27 +5,35 @@ import doc from "./docStructure"; // doc.header, main, or footer;
 // to run= npx webpack;
 
 const headerFooterContent = (() => {
-  doc.header.textContent = "Restaurant Page!";
-  doc.footer.textContent = "Thank you for Playing";
+  doc.header.textContent = "Odin's Comfort Cafe!";
+  doc.footer.textContent = "See you soon!";
 })();
 
 const menuItem = (() => {
   const pizza = new ItemCreation(
-    "Pizza", 
-    "Lori's favorite food");
+    "Proper Pizza", 
+    "When you need something greasy and HOT!");
   const cheeseBurger = new ItemCreation(
-    "Cheese Burger",
-    "Steve's favorite food"
+    "Cheesy Cheese Burger",
+    "The best thing on the menu. Make sure to get the fries."
   );
   const hotDog = new ItemCreation(
-    "Hot Dog",
-    "Food that Steve likes, and Lori tolerates...but Steve really likes it"
+    "'Hott' Hot Dog",
+    "A quick bite, to cure your hunger."
   );
   const tacos = new ItemCreation(
-    "Taco's",
-    "Both Steve and Lori wished they had these right now"
+    "Terrific Taco's",
+    "When you are starving, and have time to sit down."
   );
-  return { pizza, cheeseBurger, hotDog, tacos };
+  const burrito= new ItemCreation(
+    "Busting Burrito",
+    "Try not to eat the whole thing at once."
+  );
+  const fries= new ItemCreation(
+    "Ferocious Fries",
+    "This food doesnt need an explanation. Pairs well with anything on the menu...even burritos."
+  )
+  return { pizza, cheeseBurger, hotDog, tacos, burrito, fries };
 })();
 
 const menuPage = (() => {
@@ -33,4 +41,6 @@ const menuPage = (() => {
   menuItem.cheeseBurger.addToDOM();
   menuItem.hotDog.addToDOM();
   menuItem.tacos.addToDOM();
+  menuItem.burrito.addToDOM();
+  menuItem.fries.addToDOM();
 })();
