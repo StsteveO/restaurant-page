@@ -16,7 +16,7 @@ html {
   /* --light-green-bg: #476529; */
   /* example, color: var(--navy-clr) */
   --prim-bg-clr: #22babb;
-  --sec-bg-clr: rgba(0,0,0,.5);
+  --sec-bg-clr: rgba(0,0,0,.7);
   --acc-bg-clr: #348888;
 }
 .page-container {
@@ -28,6 +28,21 @@ html {
 /* fonts */
 /* font-family: 'Roboto', sans-serif; */
 
+.bg-img{
+  background: url(./imgs/bgImg2--ty-finck-unsplash.jpg);
+  position: fixed;
+  top: -70%;
+  left: -40%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.picture{
+height: 250px;
+width: auto;
+border-bottom: 2px solid black;
+}
+
 .header,
 .footer{
   display: flex;
@@ -35,7 +50,7 @@ html {
   align-items: center;
   background-color: var(--sec-bg-clr);
   color: whitesmoke;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .header {
   font-size: 3rem;
@@ -46,7 +61,9 @@ html {
   /* text-align: center; */
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 21rem));
+  justify-content: center;
+  background-color: rgba(0,0,0,.4);
 }
 .footer {
   font-size: 1rem;
@@ -54,14 +71,20 @@ html {
 
 .item-container {
   border: 2px solid black;
-  height: 17rem;
-  width: 17rem;
+  height: auto;
+  width: auto;
   border-radius: 1.5rem;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  overflow: hidden;
 }
 .item-title,
 .item-content {
   text-align: center;
+  background-color: white;
 }
 .item-title {
   font-size: x-large;

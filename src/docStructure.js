@@ -1,4 +1,8 @@
 const doc = (() => {
+  const bgImg= document.createElement("div");
+  bgImg.classList.add("bg-img");
+  document.body.appendChild(bgImg);
+  
   const pageContainer = document.createElement("div"); 
   pageContainer.classList.add("page-container");
   document.body.appendChild(pageContainer);

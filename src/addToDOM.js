@@ -2,7 +2,8 @@ import doc from "./docStructure"; // doc.header, main, or footer;
 // import Icon from "./icon.png";
 
 class ItemCreation {
-  constructor(title, content) {
+  constructor(pic, title, content) {
+    this.pic= pic;
     this.title = title;
     this.content = content;
   }
@@ -12,8 +13,8 @@ class ItemCreation {
     itemContainer.classList.add("item-container");
     doc.main.appendChild(itemContainer);
 
-    // pic
-
+    itemContainer.appendChild(this.pic);
+    (this.pic).classList.add("picture");
 
     const itemTitle = document.createElement("div");
     itemTitle.classList.add("item-title");
