@@ -14,6 +14,13 @@ const headerFooterContent = (() => {
   doc.footer.textContent = "See you soon!";
 })();
 
+const navContent = (() => {
+  doc.nav.textContent = "Text Content";
+  const btnHome= document.createElement("button");
+  const btnMenu= document.createElement("button");
+  const btnContactUs = document.createElement("button");
+})();
+
 const pic = (() => {
   const pizza = new Image();
   pizza.src = pizzaPicFile;
@@ -75,5 +82,5 @@ const menuPage = (() => {
 })();
 
 console.log("hello world");
-console.log(pic.pizza);
+
 

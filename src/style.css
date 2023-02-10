@@ -23,7 +23,7 @@ html {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 7.5rem 1fr 3rem;
+  grid-template-rows: auto 1fr 3rem;
 }
 /* fonts */
 /* font-family: 'Roboto', sans-serif; */
@@ -52,10 +52,24 @@ border-bottom: 2px solid black;
   color: whitesmoke;
   /* border: 2px solid black; */
 }
+.header-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sec-bg-clr);
+  color: whitesmoke;
+  padding-bottom: 1rem;
+}
 .header {
   font-size: 3rem;
   font-weight: bolder;
-  overflow: hidden;
+  background-color: rgba(0,0,0,.0);
+  /* overflow: hidden; */
+}
+.nav{
+  font-size: 1rem;
+  font-weight: bold;
 }
 .main {
   /* text-align: center; */

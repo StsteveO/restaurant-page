@@ -7,9 +7,17 @@ const doc = (() => {
   pageContainer.classList.add("page-container");
   document.body.appendChild(pageContainer);
 
+  const headerContainer = document.createElement("div");
+  headerContainer.classList.add("header-container");
+  pageContainer.appendChild(headerContainer);
+
   const header = document.createElement("div");
   header.classList.add("header");
-  pageContainer.appendChild(header);
+  headerContainer.appendChild(header);
+
+  const nav= document.createElement("div");
+  nav.classList.add("nav");
+  headerContainer.appendChild(nav);
 
   const main = document.createElement("div");
   main.classList.add("main");
@@ -19,7 +27,7 @@ const doc = (() => {
   footer.classList.add("footer");
   pageContainer.appendChild(footer);
 
-  return { header, main, footer };
+  return { headerContainer, header, nav, main, footer };
 })();
 
 export default doc;
