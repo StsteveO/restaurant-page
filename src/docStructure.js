@@ -26,6 +26,7 @@ const doc = (() => {
 
   const btnMenu = document.createElement("button");
   btnMenu.classList.add("btn-menu");
+  btnMenu.classList.add("updated-btn");
   btnMenu.textContent = "Menu";
   navContainer.appendChild(btnMenu);
 

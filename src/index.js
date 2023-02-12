@@ -1,7 +1,9 @@
 import "./style.css";
 import ItemCreation from "./addToDOM"; // title, content;
 import doc from "./docStructure"; // doc.header, main, or footer;
-import btnClickLogic from "./btn-click-logic";
+import homePg from "./home-pg";
+import contactUsPg from "./contact-us";
+// import btnClickLogic from "./btn-click-logic";
 
 import pizzaPicFile from "./imgs/pizza--kelvin-t-unsplash.jpg";
 import cheeseBurgerPicFile from "./imgs/cheeseBurger--amirali-mirhashemian-unsplash.jpg";
@@ -74,6 +76,41 @@ const menuPage = (() => {
   menuItem.tacos.addToDOM();
   menuItem.burrito.addToDOM();
   menuItem.fries.addToDOM();
+})();
+
+const btnClickLogic = (() => {
+  doc.btnHome.addEventListener("click", () => {
+    const menuContainer = document.querySelectorAll(".item-container");
+    menuContainer.forEach((foodItem) => foodItem.classList.add("hide"));
+    homePg.container.classList.remove("hide");
+    contactUsPg.container.classList.add("hide");
+    doc.main.classList.add("updated-display");
+    doc.btnHome.classList.add("updated-btn");
+    doc.btnMenu.classList.remove("updated-btn");
+    doc.btnContactUs.classList.remove("updated-btn");
+  });
+
+  doc.btnMenu.addEventListener("click", () => {
+    const menuContainer = document.querySelectorAll(".item-container");
+    menuContainer.forEach((foodItem) => foodItem.classList.remove("hide"));
+    homePg.container.classList.add("hide");
+    contactUsPg.container.classList.add("hide");
+    doc.main.classList.remove("updated-display");
+    doc.btnHome.classList.remove("updated-btn");
+    doc.btnMenu.classList.add("updated-btn");
+    doc.btnContactUs.classList.remove("updated-btn");
+  });
+
+  doc.btnContactUs.addEventListener("click", () => {
+    const menuContainer = document.querySelectorAll(".item-container");
+    menuContainer.forEach((foodItem) => foodItem.classList.add("hide"));
+    contactUsPg.container.classList.remove("hide");
+    homePg.container.classList.add("hide");
+    doc.main.classList.add("updated-display");
+    doc.btnHome.classList.remove("updated-btn");
+    doc.btnMenu.classList.remove("updated-btn");
+    doc.btnContactUs.classList.add("updated-btn");
+  });
 })();
 
 console.log("hello world");

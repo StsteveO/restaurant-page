@@ -42,6 +42,10 @@ height: 250px;
 width: auto;
 border-bottom: 2px solid black;
 }
+.main-page-picture{
+  height: 20rem;
+  width:auto;
+}
 
 .header,
 .footer{
@@ -86,6 +90,11 @@ border-bottom: 2px solid black;
   cursor: pointer;
   transform: scale(1.2);
 }
+.updated-btn{
+  background-color: rgb(209, 0, 209);
+  cursor: pointer;
+  transform: scale(1.2);
+}
 .main {
   /* text-align: center; */
   display: grid;
@@ -93,6 +102,11 @@ border-bottom: 2px solid black;
   grid-template-columns: repeat(auto-fit, minmax(21rem, 21rem));
   justify-content: center;
   background-color: rgba(0,0,0,.4);
+}
+.updated-display{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer {
   font-size: 1rem;
@@ -111,6 +125,11 @@ border-bottom: 2px solid black;
   overflow: hidden;
   /* display: none; */
   transition: 2s;
+}
+.updated-container{
+  height: 25rem;
+  width: 29rem;
+  background-color: white;
 }
 .item-title,
 .item-content {
