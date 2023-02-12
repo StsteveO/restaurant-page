@@ -3,7 +3,6 @@ import ItemCreation from "./addToDOM"; // title, content;
 import doc from "./docStructure"; // doc.header, main, or footer;
 import homePg from "./home-pg";
 import contactUsPg from "./contact-us";
-// import btnClickLogic from "./btn-click-logic";
 
 import pizzaPicFile from "./imgs/pizza--kelvin-t-unsplash.jpg";
 import cheeseBurgerPicFile from "./imgs/cheeseBurger--amirali-mirhashemian-unsplash.jpg";
@@ -11,8 +10,7 @@ import hotdogPicFile from "./imgs/hotdog2--andersen-jensen-unsplash.jpg";
 import tacoPicFile from "./imgs/tacos--tai-s-captures-unsplash.jpg";
 import burritoPicFile from "./imgs/burrito2--kashish-lamba-unsplash.jpg";
 import friesPicFile from "./imgs/fries--joyce-panda-unsplash.jpg";
-// import Icon from "./icon.png";
-// to run= npx webpack;
+
 const headerFooterContent = (() => {
   doc.header.textContent = "Odin's Comfort Cafe!";
   doc.footer.textContent = "See you soon!";
