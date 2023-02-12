@@ -112,7 +112,3 @@ const btnClickLogic = (() => {
     doc.btnContactUs.classList.add("updated-btn");
   });
 })();
-
-console.log("hello world");
-
-
