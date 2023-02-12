@@ -15,9 +15,24 @@ const doc = (() => {
   header.classList.add("header");
   headerContainer.appendChild(header);
 
-  const nav= document.createElement("div");
-  nav.classList.add("nav");
-  headerContainer.appendChild(nav);
+  const navContainer= document.createElement("div");
+  navContainer.classList.add("nav-container");
+  headerContainer.appendChild(navContainer);
+
+  const btnHome= document.createElement("button");
+  btnHome.classList.add("btn-home");
+  btnHome.textContent="Home";
+  navContainer.appendChild(btnHome);
+
+  const btnMenu = document.createElement("button");
+  btnMenu.classList.add("btn-menu");
+  btnMenu.textContent = "Menu";
+  navContainer.appendChild(btnMenu);
+
+  const btnContactUs = document.createElement("button");
+  btnContactUs.classList.add("btn-contact-us");
+  btnContactUs.textContent = "Contact Us";
+  navContainer.appendChild(btnContactUs);
 
   const main = document.createElement("div");
   main.classList.add("main");
@@ -27,7 +42,7 @@ const doc = (() => {
   footer.classList.add("footer");
   pageContainer.appendChild(footer);
 
-  return { headerContainer, header, nav, main, footer };
+  return { headerContainer, header, navContainer, btnHome, btnMenu, btnContactUs, main, footer };
 })();
 
 export default doc;

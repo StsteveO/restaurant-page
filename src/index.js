@@ -15,10 +15,20 @@ const headerFooterContent = (() => {
 })();
 
 const navContent = (() => {
-  doc.nav.textContent = "Text Content";
-  const btnHome= document.createElement("button");
-  const btnMenu= document.createElement("button");
-  const btnContactUs = document.createElement("button");
+  // const btnHome= document.createElement("div");
+  // btnHome.classList.add("btn home");
+  // btnHome.textContent="Home";
+  // doc.navContainer.appendChild(btnHome);
+
+  // const btnMenu= document.createElement("div");
+  // btnMenu.classList.add("btn menu");
+  // btnMenu.textContent="Menu";
+  // doc.navContainer.appendChild(btnMenu);
+
+  // const btnContactUs = document.createElement("div");
+  // btnContactUs.classList.add("btn contact-us");
+  // btnContactUs.textContent="Contact Us";
+  // doc.navContainer.appendChild(btnContactUs);
 })();
 
 const pic = (() => {

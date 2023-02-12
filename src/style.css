@@ -67,9 +67,24 @@ border-bottom: 2px solid black;
   background-color: rgba(0,0,0,.0);
   /* overflow: hidden; */
 }
-.nav{
-  font-size: 1rem;
-  font-weight: bold;
+.nav-container{
+  display: flex;
+  justify-content: space-around;
+}
+.btn-home,
+.btn-menu,
+.btn-contact-us{
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  transition: .25s;
+}
+.btn-home:hover,
+.btn-menu:hover,
+.btn-contact-us:hover{
+  background-color: rgb(209, 0, 209);
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .main {
   /* text-align: center; */
@@ -94,6 +109,7 @@ border-bottom: 2px solid black;
   justify-content:space-between;
   align-items: center;
   overflow: hidden;
+  /* display: none; */
 }
 .item-title,
 .item-content {
@@ -107,4 +123,7 @@ border-bottom: 2px solid black;
 .item-content {
   font-size: large;
   font-weight: 500;
+}
+.hide{
+  
 }
