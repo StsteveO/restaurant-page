@@ -1,6 +1,8 @@
 import "./style.css";
 import ItemCreation from "./addToDOM"; // title, content;
 import doc from "./docStructure"; // doc.header, main, or footer;
+import btnClickLogic from "./btn-click-logic";
+
 import pizzaPicFile from "./imgs/pizza--kelvin-t-unsplash.jpg";
 import cheeseBurgerPicFile from "./imgs/cheeseBurger--amirali-mirhashemian-unsplash.jpg";
 import hotdogPicFile from "./imgs/hotdog2--andersen-jensen-unsplash.jpg";
@@ -12,23 +14,6 @@ import friesPicFile from "./imgs/fries--joyce-panda-unsplash.jpg";
 const headerFooterContent = (() => {
   doc.header.textContent = "Odin's Comfort Cafe!";
   doc.footer.textContent = "See you soon!";
-})();
-
-const navContent = (() => {
-  // const btnHome= document.createElement("div");
-  // btnHome.classList.add("btn home");
-  // btnHome.textContent="Home";
-  // doc.navContainer.appendChild(btnHome);
-
-  // const btnMenu= document.createElement("div");
-  // btnMenu.classList.add("btn menu");
-  // btnMenu.textContent="Menu";
-  // doc.navContainer.appendChild(btnMenu);
-
-  // const btnContactUs = document.createElement("div");
-  // btnContactUs.classList.add("btn contact-us");
-  // btnContactUs.textContent="Contact Us";
-  // doc.navContainer.appendChild(btnContactUs);
 })();
 
 const pic = (() => {

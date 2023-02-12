@@ -110,6 +110,7 @@ border-bottom: 2px solid black;
   align-items: center;
   overflow: hidden;
   /* display: none; */
+  transition: 2s;
 }
 .item-title,
 .item-content {
@@ -125,5 +126,5 @@ border-bottom: 2px solid black;
   font-weight: 500;
 }
 .hide{
-  
+  display: none;
 }
